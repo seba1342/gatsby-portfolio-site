@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+}
+
+.header__brand {
+  padding: 0 16px;
+  color: inherit;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.header__link {
+  color: inherit;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding: 16px;
+}
+
+.header__link:hover {
+  text-decoration: line-through;
+}
+
+.header__link--active {
+  text-decoration: line-through;
+}
+
+
