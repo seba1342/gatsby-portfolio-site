@@ -50,7 +50,7 @@ export default class ImageRevealOnHover extends React.Component {
         <div className="project__title">{frontmatter.title}</div>
         <p className="project__excerpt">{frontmatter.excerpt}</p>
 
-        <img ref={this.imageElementRef} src={imgSrc} className="project__image" />
+        <img ref={this.imageElementRef} src={imgSrc} alt="Hover" className="project__image" />
       </Link>
     );
   }

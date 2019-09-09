@@ -1,6 +1,5 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
 
 import Header from '../components/Header/Header';
 import ImageRevealOnHover from '../components/ImageRevealOnHover/ImageRevealOnHover';
