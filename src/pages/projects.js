@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Header from '../components/Header/Header';
-import ImageRevealOnHover from '../components/ImageRevealOnHover/ImageRevealOnHover';
+import ProjectItem from '../components/ProjectItem/ProjectItem';
 
 import './styles.css';
 
@@ -18,13 +18,15 @@ const Layout = ({ data }) => {
           const featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid;
 
           return (
-            <ImageRevealOnHover
-              frontmatter = {frontmatter}
-              imgSrc = {featuredImgFluid.src}
-              key={frontmatter.path}
-            />
+            <div className="container__projects">
+              <ProjectItem
+                frontmatter = {frontmatter}
+                imgSrc= {featuredImgFluid.src}
+              />
+            </div>
           );
         })}
+        <p>Nice work making it to the bottom, didn't think anyone would make it this far <span role="img" aria-label="fire emoji">🔥</span></p>
       </div>
 
     </div>
@@ -43,7 +45,7 @@ export const query = graphql`
             date
             featuredImage {
               childImageSharp{
-                fluid (maxWidth:400, quality:100){
+                fluid (maxWidth:800, quality:100){
                   src
                   srcSet
                   aspectRatio

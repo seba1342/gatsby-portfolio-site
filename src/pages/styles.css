@@ -11,12 +11,14 @@ body.light-mode {
   background-color: antiquewhite;
   color: #222222;
   transition: background-color 1s ease;
+  border-color: #222222;
 }
 
 body.dark-mode {
   background-color: #222222;
   color: antiquewhite;
   transition: background-color 1s ease;
+  border-color: antiquewhite;
 }
 
 h1 {

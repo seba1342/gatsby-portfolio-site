@@ -9,7 +9,6 @@ const DarkModeToggle = () => {
   return (
     <div>
       <span className="dark-mode-toggle" onClick={darkMode.toggle}>
-        {/* {darkMode.value ? '🌞' : '🌙'} */}
         {darkMode.value ? '☀' : '☾'}
       </span>
     </div>

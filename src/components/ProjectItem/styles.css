@@ -1,0 +1,23 @@
+.project__link {
+  margin-bottom: 1rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.project__item {
+  margin: 48px 0;
+}
+
+.project__item__title {
+  font-size: 1.4em;
+  text-decoration: underline;
+}
+
+.project__item__image {
+  max-width: 600px;
+}
+
+.project__divider {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
