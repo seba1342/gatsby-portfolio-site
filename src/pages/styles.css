@@ -11,14 +11,20 @@ body.light-mode {
   background-color: antiquewhite;
   color: #222222;
   transition: background-color 1s ease;
-  border-color: #222222;
+}
+
+body.light-mode p.footer{
+  border-top: 1px solid #222222 !important;
 }
 
 body.dark-mode {
   background-color: #222222;
   color: antiquewhite;
   transition: background-color 1s ease;
-  border-color: antiquewhite;
+}
+
+p {
+  margin-bottom: 0;
 }
 
 h1 {
@@ -70,4 +76,9 @@ img {
 
 .back-link:hover {
   font-size: 24px;
+}
+
+.footer {
+  border-top: 1px solid antiquewhite;
+  padding-top: 24px;
 }

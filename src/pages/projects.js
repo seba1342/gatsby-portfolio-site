@@ -26,7 +26,10 @@ const Layout = ({ data }) => {
             </div>
           );
         })}
-        <p>Nice work making it to the bottom, didn't think anyone would make it this far <span role="img" aria-label="fire emoji">🔥</span></p>
+        <p class="footer">
+          Nice work making it to the bottom, didn't think anyone would make it this far
+          <span role="img" aria-label="medal emoji"> 🥇🥇🥇</span>
+        </p>
       </div>
 
     </div>
