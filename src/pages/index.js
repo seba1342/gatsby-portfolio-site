@@ -2,11 +2,14 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import Header from '../components/Header/Header';
+import SEO from '../components/SEO/SEO';
 
 import './styles.css';
 
 const Layout = () => {
   return (
+    <>
+    <SEO />
     <div className="container">
       <Header />
       <div className="container__content">
@@ -29,6 +32,7 @@ const Layout = () => {
         </p>
       </div>
     </div>
+    </>
   );
 };
 

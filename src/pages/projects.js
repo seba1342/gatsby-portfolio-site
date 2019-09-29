@@ -3,12 +3,15 @@ import { graphql } from 'gatsby';
 
 import Header from '../components/Header/Header';
 import ProjectItem from '../components/ProjectItem/ProjectItem';
+import SEO from '../components/SEO/SEO';
 
 import './styles.css';
 
 const Layout = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
+    <>
+    <SEO />
     <div className="container">
       <Header />
       <div className="container__content">
@@ -33,6 +36,7 @@ const Layout = ({ data }) => {
       </div>
 
     </div>
+    </>
   );
 };
 

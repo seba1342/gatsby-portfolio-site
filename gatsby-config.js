@@ -6,18 +6,21 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Seb',
-    description: 'A portfolio site.',
+    title: 'Seb Bailouni',
+    description:
+      'A showcase of some things I have made.',
+    siteUrl: 'https://seb.bailouni.com', // No trailing slash allowed!
   },
   plugins: [
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-plugin-sitemap',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images`,
+            resolve: 'gatsby-remark-images',
             options: {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
@@ -25,7 +28,7 @@ module.exports = {
               maxWidth: 590,
             },
           },
-          `gatsby-remark-copy-linked-files`,
+          'gatsby-remark-copy-linked-files',
         ]
       },
     }, {
