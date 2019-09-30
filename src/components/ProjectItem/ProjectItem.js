@@ -8,7 +8,9 @@ export default class ProjectItem extends React.Component {
   render() {
     const { frontmatter } = this.props;
     return (
-      <div className="project__item">
+      <div
+        key={frontmatter.path}
+        className="project__item">
         <Link
           to={frontmatter.path}
           ref={this.linkDivRef}

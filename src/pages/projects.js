@@ -11,31 +11,39 @@ const Layout = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <>
-    <SEO />
-    <div className="container">
-      <Header />
-      <div className="container__content">
-        <p>Here are some projects that I've worked on:</p>
-        {edges.map(edge => {
-          const { frontmatter } = edge.node;
-          const featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid;
+      <SEO
+        title={'Projects Page'}
+        description={'A list of my projects'}
+        pathname={'/projects'}
+      />
+      <div className="container">
+        <Header />
+        <div className="container__content">
+          <p>Here are some projects that I've worked on:</p>
+          <div className="container__projects">
+            {edges.map(edge => {
+              const { frontmatter } = edge.node;
+              const featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid;
 
-          return (
-            <div className="container__projects">
-              <ProjectItem
-                frontmatter = {frontmatter}
-                imgSrc= {featuredImgFluid.src}
-              />
-            </div>
-          );
-        })}
-        <p class="footer">
-          Nice work making it to the bottom, didn't think anyone would make it this far
-          <span role="img" aria-label="medal emoji"> 🥇🥇🥇</span>
-        </p>
+              return (
+                <ProjectItem
+                  key={frontmatter.path}
+                  frontmatter={frontmatter}
+                  imgSrc={featuredImgFluid.src}
+                />
+              );
+
+            })}
+
+          </div>
+
+          <p className="footer">
+            Nice work making it to the bottom, didn't think anyone would make it this far
+            <span role="img" aria-label="medal emoji"> 🥇🥇🥇</span>
+          </p>
+        </div>
+
       </div>
-
-    </div>
     </>
   );
 };

@@ -20,6 +20,7 @@ const SEO = ({ title, description, pathname }) => (
         description: description || defaultDescription,
         url: `${siteUrl}${pathname || '/'}`,
       };
+
       return (
         <>
           <Helmet title={seo.title} >

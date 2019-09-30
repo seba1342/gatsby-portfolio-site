@@ -7,11 +7,16 @@ import SEO from '../components/SEO/SEO';
 import '../pages/styles.css';
 
 const Template = (props) => {
-  const { title, excerpt } = props.data.markdownRemark.frontmatter;
+  const { title, excerpt, path } = props.data.markdownRemark.frontmatter;
   const html = props.data.markdownRemark.html;
+
   return (
     <>
-    <SEO />
+    <SEO
+      title={title}
+      description={excerpt}
+      pathname={path}
+    />
     <div className="container">
       <Header />
       <div className="container__content">
@@ -32,6 +37,7 @@ export const query = graphql`
       frontmatter {
         title
         excerpt
+        path
       }
     }
   }`;
