@@ -3,11 +3,10 @@ path: "/projects/digital-discourse-machine"
 date: "2019-09-01"
 title: "Digital Discourse Machine"
 tags: ["js", "netlify", "react", "gatsby", "design"]
-excerpt: "A project which attempts to demonstrate the evolution of love letters into the digital world."
+excerpt: "A project which attempts to demonstrate the evolution of love letters in the digital world."
 featuredImage: "./digital-discourse-machine.png"
+projectLink: "https://digital-discourse-machine.bailouni.com"
 ---
-
-![Bailouni Family Tree Image](./digital-discourse-machine.png)
 
 Digital Discoure Machine is a project which explores past and present ways of communicating love.
 Old love letters were sourced online for content and the handwriting was imposed ontop of a modern day iMessage conversation.

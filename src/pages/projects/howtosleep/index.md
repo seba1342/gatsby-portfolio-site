@@ -2,11 +2,11 @@
 path: "/projects/how-to-sleep"
 date: "2019-06-01"
 title: "How To Sleep"
-tags: ['js', 'netlify', 'illustration', 'design']
+tags: ["js", "netlify", "illustration", "design"]
 excerpt: "A website which informs people on how to get a better night of sleep."
 featuredImage: "./howtosleep.png"
+projectLink: "https://howtosleep.bailouni.com"
 ---
-![How To Sleep GIF](./howtosleep.gif)
 
 This project was built in response to a brief which required us to build a 'how-to' guide - with the medium and content being upto us.
 

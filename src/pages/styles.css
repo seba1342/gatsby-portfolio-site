@@ -1,6 +1,5 @@
 body {
   font-family: 'avenir', 'Helvetica Neue', Arial, sans-serif;
-
   /* Turn off anti-aliasing (stops lighter coloured fonts looking bold)*/
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
@@ -13,7 +12,7 @@ body.light-mode {
   transition: background-color 1s ease;
 }
 
-body.light-mode p.footer{
+body.light-mode p.footer {
   border-top: 1px solid #222222 !important;
 }
 
@@ -44,6 +43,7 @@ p {
   font-size: 1.2em;
   line-height: 1.6em;
   margin-top: 0;
+  padding: .8rem 0;
 }
 
 a {
@@ -80,5 +80,10 @@ img {
 
 .footer {
   border-top: 1px solid antiquewhite;
-  padding-top: 24px;
+  margin-top: 48px;
+}
+
+.project__image {
+  margin: 2rem 0;
+  border-radius: 1%;
 }

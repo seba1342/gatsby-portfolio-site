@@ -9,10 +9,6 @@
   font-style: italic;
 }
 
-.project__item {
-  margin: 48px 0;
-}
-
 .project__item__title {
   font-size: 1.6em;
   text-decoration: none;
