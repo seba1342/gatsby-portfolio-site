@@ -14,6 +14,6 @@ Old love letters were sourced online for content and the handwriting was imposed
 I noticed while reading these converted love letters that I began to shudder, yet this did not happen while I was reading them in their original form.
 I think has something to do with the emojis. I do know that it is cringey though.
 
-This was a good project to introduce me to Gatsby (which is also what I am using for this website). I liked playing around with the tags used to filter the letters and Gatsby makes this super easy.
+This was a good project to introduce me to [Gatsby](https://gatsbyjs.org) (which is also what I am using for this website). I liked playing around with the tags used to filter the letters and [Gatsby](https://gatsbyjs.org) makes this super easy.
 
 You can see it live at <https://digital-discourse-machine.bailouni.com>
