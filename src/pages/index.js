@@ -26,7 +26,7 @@ const Layout = () => {
         </p>
         <p>
           I am also studying a double degree in IT and Design at Monash University.
-          I'm passionate about solving problems with others, playing basketball and running.
+          I'm inspired to solve problems with others, playing basketball and running.
         </p>
         <p>
           In my free time I enjoy playing video/board games, listening to podcasts,
