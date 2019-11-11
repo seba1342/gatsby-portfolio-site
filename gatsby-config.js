@@ -9,7 +9,7 @@ module.exports = {
     title: 'Seb Bailouni',
     description:
       'A showcase of some things I have made.',
-    siteUrl: 'https://seb.bailouni.com', // No trailing slash allowed!
+    siteUrl: 'https://seb.bailouni.com',
   },
   plugins: [
     'gatsby-plugin-sitemap',
@@ -22,9 +22,6 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
               maxWidth: 590,
             },
           },
