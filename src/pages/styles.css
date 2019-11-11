@@ -1,5 +1,5 @@
 body {
-  font-family: 'avenir', 'Helvetica Neue', Arial, sans-serif;
+  font-family: "avenir", "Helvetica Neue", Arial, sans-serif;
   /* Turn off anti-aliasing (stops lighter coloured fonts looking bold)*/
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
@@ -43,7 +43,7 @@ p {
   font-size: 1.2em;
   line-height: 1.6em;
   margin-top: 0;
-  padding: .8rem 0;
+  padding: 0.8rem 0;
 }
 
 a {
@@ -86,4 +86,16 @@ img {
 .project__image {
   margin: 2rem 0;
   border-radius: 1%;
+}
+
+iframe {
+  max-width: 600px !important;
+  width: 100%;
+  height: 400px;
+}
+
+@media screen and (max-width: 750px) {
+  iframe {
+    height: 200px;
+  }
 }
