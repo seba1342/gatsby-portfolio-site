@@ -25,7 +25,7 @@ const Layout = () => {
           I add a little bit to the internet everyday.
         </p>
         <p>
-          I am also studying a double degree in IT and Design at Monash University.
+          I also recently completed a double degree in IT and Design at Monash University.
           I'm inspired to solve problems with others, play basketball and run.
         </p>
         <p>

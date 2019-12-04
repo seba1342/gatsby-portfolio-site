@@ -32,7 +32,7 @@ const Header = () => {
           }
         }
       `}
-      render={data =><TitleAndDescription data={data} />}
+      render={data => <TitleAndDescription data={data} />}
     />
   );
 };
