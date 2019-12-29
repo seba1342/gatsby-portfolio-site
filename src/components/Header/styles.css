@@ -20,11 +20,16 @@
 }
 
 .header__link:hover {
-  text-decoration: line-through;
+  text-decoration: underline;
 }
 
 .header__link--active {
-  text-decoration: line-through;
+  text-decoration: underline;
 }
 
-
+/* @media only screen and (max-width: 600px) {
+  .header__brand {
+    padding: 0;
+    padding-right: 16px;
+  }
+} */

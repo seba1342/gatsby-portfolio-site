@@ -1,13 +1,13 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import Header from '../components/Header/Header';
+import Layout from '../components/Layout/Layout';
 import ProjectItem from '../components/ProjectItem/ProjectItem';
 import SEO from '../components/SEO/SEO';
 
 import './styles.css';
 
-const Layout = ({ data }) => {
+const Projects = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <>
@@ -16,12 +16,12 @@ const Layout = ({ data }) => {
         description={'A list of my projects'}
         pathname={'/projects'}
       />
-      <div className="container">
-        <Header />
+
+      <Layout className="">
         <div className="container__content">
-          <p>Here are some projects that I've worked on:</p>
+          <p className="animation-appear" style={{animationDelay: `100ms`}}>Here are some projects that I've worked on:</p>
           <div className="container__projects">
-            {edges.map(edge => {
+            {edges.map((edge, index) => {
               const { frontmatter } = edge.node;
               const featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid;
 
@@ -30,6 +30,7 @@ const Layout = ({ data }) => {
                   key={frontmatter.path}
                   frontmatter={frontmatter}
                   imgSrc={featuredImgFluid.src}
+                  style={{animationDelay: `${index * 100 + 200}ms`}}
                 />
               );
 
@@ -42,8 +43,8 @@ const Layout = ({ data }) => {
             <span role="img" aria-label="medal emoji"> 🥇🥇🥇</span>
           </p>
         </div>
+      </Layout>
 
-      </div>
     </>
   );
 };
@@ -75,4 +76,4 @@ export const query = graphql`
     }
   }`;
 
-export default Layout;
+export default Projects;

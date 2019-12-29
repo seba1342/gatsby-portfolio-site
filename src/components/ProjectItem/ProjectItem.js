@@ -10,7 +10,9 @@ export default class ProjectItem extends React.Component {
     return (
       <div
         key={frontmatter.path}
-        className="project__item">
+        className="project__item animation-appear"
+        style={this.props.style}
+        >
         <Link
           to={frontmatter.path}
           ref={this.linkDivRef}

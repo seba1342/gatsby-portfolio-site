@@ -1,6 +1,9 @@
 .dark-mode-toggle {
   font-size: 24px;
-  margin: 0 12px;
-  width: 30px;
   cursor: pointer;
+}
+
+.dark-mode-toggle__container {
+  width: 30px;
+  margin: 0 12px;
 }
