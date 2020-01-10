@@ -22,17 +22,20 @@ const Template = (props) => {
       
       <Layout className="">
         <div className="container__content">
-            <h1 className="project__title animation-appear" style={{animationDelay: `100ms`}}>{title}</h1>
-            <p className="project__excerpt animation-appear" style={{animationDelay: `200ms`}}>{excerpt}</p>
-            { projectLink ?
-              <a href={projectLink} target="_blank" rel="noopener noreferrer">
-                <Img fluid={featuredImgFluid} className="project__image animation-appear" style={{animationDelay: `300ms`}} />
-              </a> :
-              <Img fluid={featuredImgFluid} className="project__image animation-appear" style={{animationDelay: `300ms`}} />
-            }
-            <div className="animation-appear" style={{animationDelay: `400ms`}} dangerouslySetInnerHTML={{ __html: html }} />
-            <Link to="/projects" className="back-link animation-appear" style={{animationDelay: `500ms`}}>{'⬅️ Back'}</Link>
-          </div>
+          {/* <div className="flex-row items-center"> */}
+            <Link to="/projects" className="back-link animation-appear" style={{animationDelay: `100ms`}}>{'⬅️ '}<span className="back-link--text">Back</span></Link>
+            <h1 className="project__title animation-appear" style={{animationDelay: `200ms`}}>{title}</h1>
+          {/* </div> */}
+         
+          <p className="project__excerpt animation-appear" style={{animationDelay: `300ms`}}>{excerpt}</p>
+          { projectLink ?
+            <a href={projectLink} target="_blank" rel="noopener noreferrer">
+              <Img fluid={featuredImgFluid} className="project__image animation-appear" style={{animationDelay: `400ms`}} />
+            </a> :
+            <Img fluid={featuredImgFluid} className="project__image animation-appear" style={{animationDelay: `400ms`}} />
+          }
+          <div className="animation-appear" style={{animationDelay: `500ms`}} dangerouslySetInnerHTML={{ __html: html }} />
+        </div>
       </Layout>
         
     </>

@@ -40,7 +40,7 @@ const Projects = ({ data }) => {
 
           <p className="footer">
             Nice work making it to the bottom, didn't think anyone would make it this far
-            <span role="img" aria-label="medal emoji"> 🥇🥇🥇</span>
+            <span role="img" aria-label="medal emoji"> 🥇</span>
           </p>
         </div>
       </Layout>
