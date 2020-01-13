@@ -15,12 +15,12 @@ module.exports = {
     'gatsby-plugin-sitemap',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: 'UA-140345451-1',
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-google-analytics',
+    //   options: {
+    //     trackingId: 'UA-140345451-1',
+    //   },
+    // },
     {
       resolve: 'gatsby-transformer-remark',
       options: {

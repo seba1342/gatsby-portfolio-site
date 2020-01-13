@@ -10,7 +10,7 @@ import '../pages/styles.css';
 const Template = (props) => {
   const { title, excerpt, path, projectLink } = props.data.markdownRemark.frontmatter;
   const featuredImgFluid = props.data.markdownRemark.frontmatter.featuredImage.childImageSharp.fluid;
-  const html = props.data.markdownRemark.html;
+    const html = props.data.markdownRemark.html;
 
   return (
     <>
